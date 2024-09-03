@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SPAN</title>
+        <!-- CSS 작성 -->
+        <style> 
+            table, th, td{
+                border : 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td{
+                padding : 5px;
+                text-align: center;
+            }
+        </style>  
+    </head>
+    <body>
+        <table>
+            <caption>rowspan=2</caption>
+            <tr>
+                <td>TD</td>
+                <td>TD</td>
+                <td>TD</td>
+            </tr>
+            <tr>
+                <td rowspan="2">TD</td>
+                <td>TD</td>
+                <td>TD</td>
+            </tr>
+            <tr>                
+                <td>TD</td>
+                <td>TD</td>
+            </tr>
+                        
+        </table>
+
+        <hr/>
+
+        <table>
+            <caption>colspan=2</caption>
+            <tr>
+                <td>TD</td>
+                <td>TD</td>
+                <td>TD</td>
+            </tr>
+            <tr>
+                <td colspan="2">TD</td>                                
+                <td>TD</td>                
+            </tr>
+            <tr>           
+                <td>TD</td>     
+                <td>TD</td>
+                <td>TD</td>
+            </tr>
+                        
+        </table>
+            
+    </body>
+</html>

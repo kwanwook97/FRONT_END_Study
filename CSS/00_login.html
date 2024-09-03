@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login페이지</title>
+        <style>            
+            table, tr, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;                
+            }                         
+            b{
+                margin: 0px 20px;
+            }
+            input[value="로그인"]{                
+                padding: 30px 5px;
+                margin: 10px;
+            }
+            input[name="id"], input[name="pw"]{
+                margin: 0px 10px;
+            }
+            button{
+                margin: 10px 0px;
+            }
+        </style>
+    </head> 
+    <body>
+        <h3>로그인 페이지</h3>
+        <hr/>        
+        <table>                        
+            <form action="" method="get">
+                <tr>
+                    <th><b>ID</b></th>
+                    <th><input type="text" placeholder="아이디를 입력하세요." name="id" value=""/></th>
+                    <th rowspan="2"><input type="submit" value="로그인"></th>
+                </tr>
+                <tr>
+                    <th><b>PW</b></th>
+                    <th><input type="password" placeholder="비밀번호를 입력하세요." name="pw" value=""/></th>
+                </tr>
+            </form>                
+
+            <tr>
+                <td colspan="3">                         
+                    <button type="button" onclick="location.href='./00_regist.html' ">회원가입</button>
+                    <button type="button" onclick="location.href='./00_findId.html' ">아이디/비번 찾기</button>                        
+                                            
+                </td>
+            </tr>
+            
+        </table>
+    </body>
+</html>

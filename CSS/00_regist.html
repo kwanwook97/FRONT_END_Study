@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+        <style>
+            .fw{
+                font-weight: 600px;
+            }
+            table, tr, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 10px;                                   
+            }  
+            td b{
+                text-align: center;                             
+            }    
+            input[type="text"], input[type="password"], input[type="email"], input[type="range"]{
+                width: 100%;
+            }                          
+
+        </style>
+    </head>
+    <body>
+        <h3>회원가입 페이지</h3>
+        <hr/>
+        <table>            
+                <tr>
+                    <td><b><div>아이디</div></b></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td><b><div>비밀번호</div></b></td>
+                    <td><input type="password"/></td>
+                </tr>
+                <tr>
+                    <td><b><div>비밀번호 확인</div></b></td>
+                    <td><input type="password"/></td>
+                </tr>
+                <tr>
+                    <td><b><div>이 름</div></b></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td><b><div>이 메 일</div></b></td>
+                    <td><input type="email"/></td>
+                </tr>
+                <tr>
+                    <td><b><div>생년월일</div></b></td>
+                    <td>
+                        <select name="" id="">
+                            <option value="1987">1987</option>                            
+                        </select>
+
+                        <select name="" id="">
+                            <option value="04">04</option>                            
+                        </select>
+
+                        <select name="" id="">
+                            <option value="01">01</option>                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><div>성별</div></b></td>
+                    <td>
+                        <input type="radio" name="gender" value="male"/>남자
+                        <input type="radio" name="gender" value="female"/>여자
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><div>취미</div></b></td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="drive"/>드라이브 
+                        <input type="checkbox" name="hobby" value="sport"/>스포츠
+                        <input type="checkbox" name="hobby" value="game"/>게임
+                        <input type="checkbox" name="hobby" value="fishhook"/>낚시
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><div>나이(0~100)</div></b></td>
+                    <td>
+                        <input type="number" name="qty" min="0" max="100" value="20"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><div>보안등급</div></b></td>
+                    <td>
+                        <input type="range" min="0" max="10" value="0" step="1"/>
+                    </td>
+                </tr>
+                
+        </table>
+    </body>
+</html>

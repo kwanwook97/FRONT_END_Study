@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="icon" href="../img/chrome.png">
+    </head>
+    <style>
+        
+        p{
+            /* p태그의 style변경. */
+            background-color: lightskyblue;    
+        }
+        
+        .myclass{
+            /* class의 style변경. */
+            color: blue;
+        }        
+
+        p, div{
+            /* p와 div태그요소들을 가져와 글자의 굵기를 설정. */
+            /* 굵기는 일반적으로 b태그와 같은 600정도를 준다. */
+            font-weight: 600;    
+        }
+        
+        div>p{ /* >는 생략가능하다. (예: div p) */
+            /* div의 자식인 p태그 요소를 가져와 background-color를 설정. */
+            background-color: blueviolet;
+        }
+
+        input[type="text"]{
+            /* input태그중 type속성이 text인 요소의 background-color를 설정. */
+            background-color: skyblue;
+        }
+
+        input[type="email"]{         
+            background-color: aquamarine;
+        }
+
+        img{
+            width: 100px;
+            /* height: 100px; 이미지의 경우 하나만 설정해도 나머지 값은 알아서 맞춰준다. */
+        }
+
+        /* ~은 해당 단어를 포함하고 있으면... */
+        img[alt ~= "fire"]{
+            border: 1px solid black;
+        }
+        
+        a:hover{
+            background-color: darkcyan;
+        }
+
+        img:hover{
+            border: 1px solid black;
+        }
+
+        #myid{
+            color: forestgreen;
+            font-size: 20px;
+        }
+
+    </style>
+    <body>
+        <p id="myid">id가 있는 요소</p>
+        <p class="myclass">class가 있는 요소</p>
+        <p class="myclass">class가 있는 요소</p>        
+        <p>태그만 있는 요소</p>
+        <div>DIV 요소</div>
+        <div>
+            <p>DIV안에 있는 P태그</p>
+        </div>
+
+        <input type="text"/>
+        <input type="email"/>
+        <br/><br/>        
+
+        <img src="../img/img01.jpg" alt="mushroom"/>
+        <img src="../img/img02.jpg" alt="fire flower"/>
+        <img src="../img/img03.jpg" alt="마리오"/>
+        <img src="../img/img04.jpg" alt="독버섯"/>        
+        <br/><br/>
+        <a href="#">테스트 링크</a>
+        
+    </body>
+</html>

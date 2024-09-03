@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS TUTORIALS</title>
+        <link rel="icon" href="../img/chrome.png">
+        
+        <style>
+            div{
+                width : 100px;
+                height: 25px;
+                border: 1px solid black;
+                text-align: center;
+                margin: 5px;
+                float: left;
+                transition: all 0.5s;
+            }
+            div:hover{
+                background-color: yellowgreen;
+                /* width: 200px; */
+            }
+
+            /* 필터 순서 중요 */
+            /* 클릭전 */
+            a:link{
+                text-decoration: none;
+                color: red;
+                font-weight: 600;
+            }
+            /* 클릭후 */
+            a:visited{
+                text-decoration: none;
+                color: orange;
+            }
+            /* 마우스오버 */
+            a:hover{
+                text-decoration: underline;
+                color: blue;
+            }
+            /* 링크실행시 */
+            a:active{
+                text-decoration: none;
+                color: green;                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="https://www.daum.net/">DAUM</a>
+        </div>                
+        <div>
+            <a href="https://www.google.co.kr/">GOOGLE</a>
+        </div>                
+        <div>
+            <a href="https://www.naver.com/">NAVER</a>
+        </div>                
+        <div>
+            <a href="https://www.nate.com/">NATE</a>
+        </div>                
+    </body>
+</html>

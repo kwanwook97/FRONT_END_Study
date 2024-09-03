@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS TUTORIALS</title>
+        <link rel="icon" href="../img/chrome.png">
+        
+        <style>
+            input{
+                /* inline|block|none */
+                display: block; 
+            }
+            div{                
+                width: 50px;
+                height: 25px;
+                border: 3px solid greenyellow;
+                margin: 5px;
+                float: left;
+            }
+            div.first{ /* div태그중에서 class가 first인 녀석 */
+                border-color: red;
+                /* 나는 float:left 속성을 지우겠다.. */
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+            <!-- inline : 좌에서 우로 정렬(라인 그리듯이) -->
+             <input type="text"/>
+             <input type="text"/>
+             <input type="text"/>
+             <input type="text"/>
+            <!-- block : 위에서 아래로 정렬(블록 쌓듯이) -->
+             <div></div>
+             <div></div>
+             <div></div>
+
+             <div class="first"></div>
+             <div></div>
+             <div></div>
+
+             <div class="first"></div>
+             <div></div>
+             <div></div>
+    </body>
+</html>
